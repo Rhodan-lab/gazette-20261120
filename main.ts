@@ -55,7 +55,15 @@ mkdirSync(OUTPUT_DIR, { recursive: true });
 copyFileSync(SOURCE, DESTINATION);
 
 const handedIn = statSync(DESTINATION);
+// A short digest of the handed-in bytes, so two runs of this program can be
+// compared byte for byte without opening the image again.
+const digest = (data: Buffer): string => {
+  let sum = 0x811c9dc5; // FNV-1a, stdlib-only and stable across runs
+  for (const byte of data) { sum ^= byte; sum = Math.imul(sum, 0x01000193) >>> 0; }
+  return sum.toString(16).padStart(8, '0');
+};
 console.log(
   `handed in ${basename(DESTINATION)}: ${handedIn.size} bytes, ${width}x${height}, ` +
-  `${isPng ? 'PNG' : 'JPEG'} — the world's news of 20 November 2026 in one frame`,
+  `${isPng ? 'PNG' : 'JPEG'}, digest ${digest(bytes)} — ` +
+  `the world's news of 20 November 2026 in one frame`,
 );
