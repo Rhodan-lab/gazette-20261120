@@ -27,7 +27,7 @@ try {
 if (bytes.length === 0) fail('entry.png is empty');
 if (bytes.length > MAX_BYTES) fail(`entry.png is ${bytes.length} bytes, over the ${MAX_BYTES}-byte cap`);
 
-const isPng = bytes[0] === 0x89 && bytes.subarray(1, 4).toString('ascii') === 'PNG';
+const isPng = bytes[0] === 0x89 && bytes.subarray(1, 8).toString('latin1') === 'PNG\r\n\x1a\n';
 const isJpeg = bytes[0] === 0xff && bytes[1] === 0xd8;
 if (!isPng && !isJpeg) fail('entry.png is neither a PNG nor a JPEG by its first bytes');
 
@@ -48,6 +48,7 @@ const dimension = (kind: 'png' | 'jpeg'): { width: number; height: number } => {
 };
 
 const { width, height } = dimension(isPng ? 'png' : 'jpeg');
+if (width === 0 || height === 0) fail('entry.png carries no readable dimensions — a truncated or broken image');
 if (width > 1024 || height > 1024) fail(`entry.png is ${width}x${height}, over the 1024x1024 gate`);
 
 // Hand it in: one clean copy into the output directory.
@@ -62,6 +63,13 @@ const digest = (data: Buffer): string => {
   for (const byte of data) { sum ^= byte; sum = Math.imul(sum, 0x01000193) >>> 0; }
   return sum.toString(16).padStart(8, '0');
 };
+// Integrity self-check: the bytes sitting in the output directory must be
+// exactly the bytes we validated above, so a truncated or divergent copy
+// can never ship in place of the reviewed image.
+const copied = readFileSync(DESTINATION);
+if (copied.length !== bytes.length || digest(copied) !== digest(bytes)) {
+  fail('the copy in the output directory does not match the validated source bytes');
+}
 console.log(
   `handed in ${basename(DESTINATION)}: ${handedIn.size} bytes, ${width}x${height}, ` +
   `${isPng ? 'PNG' : 'JPEG'}, digest ${digest(bytes)} — ` +
