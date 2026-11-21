@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <style>
+      .label { font-weight: bold; fill: #16162a; }
+      .detail { fill: #3a3a4a; }
+      .tag { font-family: Verdana, sans-serif; font-weight: bold; letter-spacing: 2px; }
+      .block { fill: #ffffff; stroke: #16162a; stroke-width: 3; }
+    </style>
+  </defs>
+  <rect width="1024" height="1024" fill="#f6f1e5"/>
+  <rect x="0" y="0" width="1024" height="1024" fill="none" stroke="#16162a" stroke-width="6"/>
+  <text x="512" y="64" text-anchor="middle" font-size="26" class="tag" fill="#c8102e">THE WORLD · ONE FRAME · AS REPORTED</text>
+  <text x="512" y="138" text-anchor="middle" font-size="74" font-weight="bold" fill="#16162a">20 NOVEMBER 2026</text>
+  <text x="512" y="176" text-anchor="middle" font-size="24" class="detail">Friday's world news, in six stories</text>
+  <line x1="60" y1="198" x2="964" y2="198" stroke="#16162a" stroke-width="4"/>
+
+  <!-- Block 1: Trilateral summit -->
+  <g transform="translate(40,222)">
+    <rect class="block" width="300" height="330" rx="6"/>
+    <text x="150" y="40" text-anchor="middle" font-size="17" class="tag" fill="#c8102e">AMERICAS · ASIA · EUROPE</text>
+    <g transform="translate(150,150)" stroke="#16162a" stroke-width="5" fill="none">
+      <circle cx="-70" cy="-46" r="24" fill="#c8102e"/>
+      <circle cx="0" cy="-58" r="24" fill="#16162a"/>
+      <circle cx="70" cy="-46" r="24" fill="#e8b64c"/>
+      <path d="M -70 -20 L -70 30 L 70 30 L 70 -20" stroke-width="0" fill="none"/>
+      <path d="M -56 44 L 0 12 L 56 44" stroke-linecap="round"/>
+      <path d="M -40 30 L 40 30" stroke-linecap="round"/>
+    </g>
+    <text x="150" y="252" text-anchor="middle" font-size="24" class="label">FIRST 3-WAY SUMMIT</text>
+    <text x="150" y="282" text-anchor="middle" font-size="19" class="detail">US, Russia, China leaders meet;</text>
+    <text x="150" y="306" text-anchor="middle" font-size="19" class="detail">no breakthrough announced</text>
+  </g>
+
+  <!-- Block 2: Strike on Ukraine -->
+  <g transform="translate(362,222)">
+    <rect class="block" width="300" height="330" rx="6"/>
+    <text x="150" y="40" text-anchor="middle" font-size="17" class="tag" fill="#c8102e">EUROPE</text>
+    <g transform="translate(150,150)">
+      <path d="M -90 60 A 110 110 0 0 1 90 60" fill="none" stroke="#16162a" stroke-width="5"/>
+      <path d="M -58 60 A 78 78 0 0 1 58 60" fill="none" stroke="#16162a" stroke-width="4"/>
+      <line x1="0" y1="60" x2="0" y2="-58" stroke="#c8102e" stroke-width="6"/>
+      <path d="M -10 -58 L 0 -80 L 10 -58 Z" fill="#c8102e"/>
+      <circle cx="0" cy="60" r="7" fill="#16162a"/>
+    </g>
+    <text x="150" y="252" text-anchor="middle" font-size="24" class="label">LARGEST NOV STRIKE</text>
+    <text x="150" y="282" text-anchor="middle" font-size="19" class="detail">Biggest missile-and-drone attack</text>
+    <text x="150" y="306" text-anchor="middle" font-size="19" class="detail">on Ukraine of the month</text>
+  </g>
+
+  <!-- Block 3: Markets -->
+  <g transform="translate(684,222)">
+    <rect class="block" width="300" height="330" rx="6"/>
+    <text x="150" y="40" text-anchor="middle" font-size="17" class="tag" fill="#c8102e">GLOBAL MARKETS</text>
+    <g transform="translate(150,150)">
+      <path d="M -85 -55 L -50 -20 L -15 -38 L 20 5 L 55 -8 L 85 45" fill="none" stroke="#c8102e" stroke-width="7" stroke-linecap="round"/>
+      <path d="M 60 40 L 85 45 L 78 22 Z" fill="#c8102e"/>
+      <rect x="-88" y="-72" width="34" height="26" rx="4" fill="#16162a"/>
+      <rect x="-78" y="-64" width="14" height="10" fill="#f6f1e5"/>
+    </g>
+    <text x="150" y="252" text-anchor="middle" font-size="24" class="label">TECH SELLOFF WIDENS</text>
+    <text x="150" y="282" text-anchor="middle" font-size="19" class="detail">Chips slide, S&amp;P 500 −8% from</text>
+    <text x="150" y="306" text-anchor="middle" font-size="19" class="detail">highs, yields fall</text>
+  </g>
+
+  <!-- Block 4: Alaska Senate -->
+  <g transform="translate(40,576)">
+    <rect class="block" width="300" height="330" rx="6"/>
+    <text x="150" y="40" text-anchor="middle" font-size="17" class="tag" fill="#c8102e">UNITED STATES</text>
+    <g transform="translate(150,150)">
+      <rect x="-45" y="-40" width="90" height="62" rx="6" fill="#16162a"/>
+      <rect x="-30" y="-56" width="60" height="18" rx="4" fill="#16162a"/>
+      <rect x="-14" y="-42" width="28" height="14" fill="#f6f1e5"/>
+      <path d="M -12 34 L 12 34" stroke="#c8102e" stroke-width="0"/>
+      <path d="M 0 30 L 0 44 M -14 44 L 14 44" stroke="#16162a" stroke-width="6" stroke-linecap="round"/>
+      <path d="M -26 44 A 30 30 0 0 1 26 44" fill="none" stroke="#16162a" stroke-width="0"/>
+    </g>
+    <text x="150" y="252" text-anchor="middle" font-size="24" class="label">ALASKA SEAT FLIPS</text>
+    <text x="150" y="282" text-anchor="middle" font-size="19" class="detail">Mary Peltola wins US Senate seat</text>
+    <text x="150" y="306" text-anchor="middle" font-size="19" class="detail">in upset result</text>
+  </g>
+
+  <!-- Block 5: Fed / AI -->
+  <g transform="translate(362,576)">
+    <rect class="block" width="300" height="330" rx="6"/>
+    <text x="150" y="40" text-anchor="middle" font-size="17" class="tag" fill="#c8102e">UNITED STATES</text>
+    <g transform="translate(150,150)">
+      <path d="M -80 40 L -80 -14 L 0 -66 L 80 -14 L 80 40 Z" fill="none" stroke="#16162a" stroke-width="6"/>
+      <line x1="-58" y1="-14" x2="-58" y2="26" stroke="#16162a" stroke-width="5"/>
+      <line x1="-29" y1="-14" x2="-29" y2="26" stroke="#16162a" stroke-width="5"/>
+      <line x1="29" y1="-14" x2="29" y2="26" stroke="#16162a" stroke-width="5"/>
+      <line x1="58" y1="-14" x2="58" y2="26" stroke="#16162a" stroke-width="5"/>
+      <rect x="-22" y="52" width="44" height="44" rx="8" fill="#c8102e"/>
+      <rect x="-12" y="62" width="24" height="24" fill="none" stroke="#f6f1e5" stroke-width="3"/>
+    </g>
+    <text x="150" y="252" text-anchor="middle" font-size="24" class="label">FED WARNS ON AI RISK</text>
+    <text x="150" y="282" text-anchor="middle" font-size="19" class="detail">DC event weighs AI's financial-</text>
+    <text x="150" y="306" text-anchor="middle" font-size="19" class="detail">stability implications</text>
+  </g>
+
+  <!-- Block 6: China-Japan -->
+  <g transform="translate(684,576)">
+    <rect class="block" width="300" height="330" rx="6"/>
+    <text x="150" y="40" text-anchor="middle" font-size="17" class="tag" fill="#c8102e">ASIA</text>
+    <g transform="translate(150,150)">
+      <rect x="-88" y="-52" width="72" height="48" fill="#c8102e"/>
+      <rect x="-88" y="-52" width="72" height="16" fill="#16162a"/>
+      <rect x="16" y="-52" width="72" height="48" fill="#ffffff" stroke="#16162a" stroke-width="3"/>
+      <circle cx="52" cy="-28" r="14" fill="#c8102e"/>
+      <line x1="-14" y1="-28" x2="14" y2="-28" stroke="#16162a" stroke-width="6"/>
+      <line x1="0" y1="-42" x2="0" y2="-14" stroke="#16162a" stroke-width="6"/>
+      <text x="0" y="52" text-anchor="middle" font-size="30" fill="#16162a" font-weight="bold">?</text>
+    </g>
+    <text x="150" y="252" text-anchor="middle" font-size="24" class="label">TIES FURTHER COOL</text>
+    <text x="150" y="282" text-anchor="middle" font-size="19" class="detail">Xi declines meeting with Japan's</text>
+    <text x="150" y="306" text-anchor="middle" font-size="19" class="detail">prime minister</text>
+  </g>
+
+  <line x1="60" y1="936" x2="964" y2="936" stroke="#16162a" stroke-width="4"/>
+  <text x="512" y="972" text-anchor="middle" font-size="19" class="detail">as reported · Nov 20 2026 · NYT · Reuters · NPR · ISW · CNBC · Bloomberg</text>
+  <text x="512" y="1002" text-anchor="middle" font-size="17" class="tag" fill="#c8102e">MAKE.FUN DAILY NEWS IMAGE CONTEST</text>
+</svg>
